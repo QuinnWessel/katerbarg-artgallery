@@ -1,6 +1,10 @@
 {
   "images": [
     {
+      "image": "/assets/images/uploads/broers.jpg",
+      "name": "broers"
+    },
+    {
       "image": "/assets/images/billen.webp",
       "name": "Billen"
     },
@@ -27,10 +31,6 @@
     {
       "image": "/assets/images/bodyandsoul gebouw.jpg",
       "name": "Gebouw"
-    },
-    {
-      "image": "/assets/images/uploads/broers.jpg",
-      "name": "broers"
     }
   ]
 }
