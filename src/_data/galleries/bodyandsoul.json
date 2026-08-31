@@ -27,6 +27,10 @@
     {
       "image": "/assets/images/bodyandsoul gebouw.jpg",
       "name": "Gebouw"
+    },
+    {
+      "image": "/assets/images/uploads/broers.jpg",
+      "name": "broers"
     }
   ]
 }
