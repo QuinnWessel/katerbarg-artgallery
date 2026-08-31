@@ -1,0 +1,14 @@
+{
+    "images": [
+        {"image": "/assets/images/thumbnail_Ruw Hout Maradonna.jpg", "name": "Maradonna"},
+        {"image": "/assets/images/thumbnail_Ruw hout Elvis.jpg", "name": "Elvis"},
+        {"image": "/assets/images/ruwhout vrouwman.jpg", "name": "Vrouw Man"},
+        {"image": "/assets/images/ruwhout vrouw3.jpg", "name": "Vrouw 3"},
+        {"image": "/assets/images/ruwhout vrouw2.jpg", "name": "Vrouw 2"},
+        {"image": "/assets/images/ruwhout vrouw.jpg", "name": "Vrouw"},
+        {"image": "/assets/images/ruwhout prince.jpg", "name": "Prince"},
+        {"image": "/assets/images/ruwhout gekleurdevrouw.jpg", "name": "Gekleurde Vrouw"},
+        {"image": "/assets/images/ruwhout 2vrouwen.jpg", "name": "2 Vrouwen"},
+        {"image": "/assets/images/ruwhout davidbowie.jpg", "name": "David Bowie"}
+    ]
+}

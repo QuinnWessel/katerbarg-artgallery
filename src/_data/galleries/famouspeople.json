@@ -1,0 +1,12 @@
+{
+    "images": [
+        {"image": "/assets/images/cruyffhout.webp", "name": "Cruyff"},
+        {"image": "/assets/images/elvis-hout.webp", "name": "Elvis"},
+        {"image": "/assets/images/amywhinehouse-hout.webp", "name": "Amy Winehouse"},
+        {"image": "/assets/images/brucehout.webp", "name": "Bruce Springsteen"},
+        {"image": "/assets/images/prince-hout.webp", "name": "Prince"},
+        {"image": "/assets/images/mickjaggerhout.webp", "name": "Mick Jagger"},
+        {"image": "/assets/images/hermanbrood-hout.webp", "name": "Herman Brood"},
+        {"image": "/assets/images/thumbnail_HS Jim Morrison.jpg", "name": "Jim Morrison"}
+    ]
+}

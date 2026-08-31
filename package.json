@@ -9,7 +9,8 @@
         "watch:eleventy": "cross-env ELEVENTY_ENV=DEV eleventy --serve",
         "build:eleventy": "cross-env ELEVENTY_ENV=PROD eleventy",
         "watch:cms": "npx decap-server",
-        "start": "del-cli ./public --force && npm-run-all --parallel watch:*",
+        "clean": "node -e \"require('fs').rmSync('./public', { recursive: true, force: true });\"",
+        "start": "npm run clean && npm-run-all --parallel watch:eleventy watch:less watch:cms",
         "build": "run-s build:*"
     },
     "repository": {

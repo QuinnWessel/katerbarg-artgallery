@@ -1,0 +1,32 @@
+{
+  "images": [
+    {
+      "image": "/assets/images/billen.webp",
+      "name": "Billen"
+    },
+    {
+      "image": "/assets/images/stippen.webp",
+      "name": "Stippen"
+    },
+    {
+      "image": "/assets/images/hakkenstring.webp",
+      "name": "Hakken String"
+    },
+    {
+      "image": "/assets/images/togetherweareone.webp",
+      "name": "Together We Are One"
+    },
+    {
+      "image": "/assets/images/bodyandsoul vrouwgroen.jpg",
+      "name": "Vrouw Groen"
+    },
+    {
+      "image": "/assets/images/bodyandsoul achterkant.jpg",
+      "name": "Achterkant"
+    },
+    {
+      "image": "/assets/images/bodyandsoul gebouw.jpg",
+      "name": "Gebouw"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+    "images": [
+        {"image": "/assets/images/beautifullnight.webp", "name": "Beautiful Night"},
+        {"image": "/assets/images/summertime.webp", "name": "Summertime"},
+        {"image": "/assets/images/waternimphpurple.webp", "name": "Water Nymph Purple"},
+        {"image": "/assets/images/waternimphautumncolors.webp", "name": "Water Nymph Autumn Colors"}
+    ]
+}

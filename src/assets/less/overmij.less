@@ -1,0 +1,539 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RPsbs-248,
+    #RPsbsr-248 {
+        padding: 0 (16/16em);
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px on tablet */
+            max-width: (550/16rem);
+            padding: var(--sectionPadding);
+            padding-left: 0;
+            padding-right: 0;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 108px */
+            gap: clamp(3rem, 8vw, 6.75rem);
+            position: relative;
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            /* changes at tablet */
+            max-width: (434/16rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-text {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            max-width: (650/16rem);
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+
+        .cs-title {
+            max-width: 20ch;
+        }
+
+        .cs-text {
+            margin-bottom: (16/16rem);
+            opacity: 0.8;
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+        }
+
+        .cs-button-solid {
+            font-size: (16/16rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            min-width: (150/16rem);
+            padding: 0 (24/16rem);
+            background-color: var(--primary);
+            border-radius: (4/16rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: (4/16rem);
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-picture {
+            width: 100%;
+            max-width: (434/16rem);
+            margin: 0;
+            border: 1px solid #f1f1f4;
+            position: relative;
+            display: block;
+            /* width divided by height */
+            aspect-ratio: 1/1;
+            /* prevents border from adding to height and width */
+            box-sizing: border-box;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RPsbs-248,
+    #RPsbsr-248 {
+        .cs-container {
+            max-width: (1280/16rem);
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cs-lines {
+            height: 100%;
+            width: 35%;
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+
+            &:before {
+                /* Right Line */
+                content: "";
+                width: 1px;
+                height: 100%;
+                background: -moz-linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                /* flips vertically */
+                transform: scaleY(-1);
+            }
+
+            &:after {
+                /* Right Line */
+                content: "";
+                width: 1px;
+                height: 100%;
+                background: -moz-linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0;
+                right: 0;
+                /* flips vertically */
+                transform: scaleY(-1);
+            }
+        }
+
+        .cs-picture {
+            /* 344px - 434px */
+            width: clamp(21.5rem, 37.5vw, 27.125rem);
+            flex: none;
+        }
+
+        .cs-content {
+            max-width: (542/16rem);
+            margin: 0;
+            width: 45%;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RPsbsr-248 {
+        padding: 0 (16/16rem);
+        .cs-container {
+            /* 60px - 100px top and bottom */
+            padding: clamp(3.75rem, 7.82vw, 6.25rem) 0;
+
+            &:before {
+                /* Left Line */
+                content: "";
+                width: 1px;
+                height: 100%;
+                background: linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                );
+                background: -webkit-linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+            }
+
+            &:after {
+                /* Right Line */
+                content: "";
+                width: 1px;
+                height: 100%;
+                background: -moz-linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0;
+                right: 0;
+                /* flips vertically */
+                transform: scaleY(-1);
+            }
+        }
+
+        .cs-lines {
+            display: none;
+        }
+
+        .cs-background {
+            /* Background Image */
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+
+            &:before {
+                /* Black Color Overlay */
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: #000;
+                opacity: 0.6;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                /* prevents the cursor from interacting with it */
+                pointer-events: none;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* Makes image act like a background-image */
+                object-fit: cover;
+            }
+        }
+
+        .cs-topper {
+            color: var(--primaryLight);
+        }
+
+        .cs-title {
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-text {
+            color: var(--bodyTextColorWhite);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RPsbsr-248 {
+        .cs-lines {
+            height: 100%;
+            width: 35%;
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+
+            &:before {
+                /* Right Line */
+                content: "";
+                width: 1px;
+                height: 100%;
+                background: -moz-linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                /* flips vertically */
+                transform: scaleY(-1);
+            }
+
+            &:after {
+                /* Right Line */
+                content: "";
+                width: 1px;
+                height: 100%;
+                background: -moz-linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    top,
+                    rgba(250, 251, 252, 0.5) 0%,
+                    rgba(250, 251, 252, 0) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0;
+                right: 0;
+                /* flips vertically */
+                transform: scaleY(-1);
+            }
+        }
+
+        .cs-picture {
+            margin: 0;
+            order: 2;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-578 {
+        background-color: #f8f8f8;
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 7vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (522/16rem);
+            /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+            padding: var(--sectionPadding);
+            padding-top: 0;
+            /* prevents padding from affecting width and height */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-text {
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+        }
+
+        .cs-button-solid {
+            font-size: (16/16rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            min-width: (150/16rem);
+            padding: 0 (24/16rem);
+            background-color: var(--primary);
+            border-radius: (4/16rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: (4/16rem);
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-picture {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: (300/16rem);
+            
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border: 2px solid black; 
+                border-radius: 4px; 
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #sbs-578 {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            flex-direction: row;
+            justify-content: flex-start;
+            /* 60px - 128px */
+            gap: clamp(3.75rem, 10vw, 8rem);
+        }
+
+        .cs-content {
+            width: 53%;
+            /* reset the padding, add the section padding back to the section container */
+            padding: 0;
+        }
+
+        .cs-picture {
+            width: 47vw;
+            max-width: (494/16rem);
+            /* 518px - 700px */
+            height: clamp(32.375rem, 63vw, 43.75rem);
+            /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+            margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
+            position: relative;
+
+            &:before {
+                /* yellow box */
+                content: "";
+                width: 50%;
+                height: 60%;
+                background: var(--secondary);
+                opacity: 1;
+                display: block;
+                position: absolute;
+                /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+                bottom: ~"calc(clamp(1rem, 2.4vw, 1.75rem)*-1)";
+                left: ~"calc(clamp(1rem, 2.4vw, 1.75rem)*-1)";
+            }
+        }
+    }
+}
+
+                                

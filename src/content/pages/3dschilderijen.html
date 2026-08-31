@@ -1,0 +1,43 @@
+---
+title: '3D Schilderijen'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: '3dschilderijen/'
+eleventyNavigation:
+    key: Project One
+    order: 3100
+    parent: Schilderijen
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/schilderijen.css">
+   
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">3D Schilderijen</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+        <img loading="lazy" decoding="async" src="../../assets/images/Banner-foto-katerbargartgallery.webp" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+{% set items = galleries['3dschilderijen'].items %}
+{% include 'components/gallery/gallery-3d.html' %}
+                                
+
+{% endblock %}

@@ -1,0 +1,100 @@
+---
+title: 'Body And Soul | Houten Sculpturen'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'bodyandsoul2/'
+eleventyNavigation:
+    key: 
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/houtensculpturen.css">
+    <link rel="stylesheet" href="/assets/css/critical.css">
+    <style>
+        /* Basis lightbox-styles */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .cs-image-group .cs-item img {
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .cs-image-group .cs-item img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Body And Soul</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://lirp.cdn-website.com/ccde371b/dms3rep/multi/opt/13898612_1138498262859757_1706263397_o%20%281%29-1306x444-1920w.jpg">
+        <source media="(min-width: 601px)" srcset="https://lirp.cdn-website.com/ccde371b/dms3rep/multi/opt/13898612_1138498262859757_1706263397_o%20%281%29-1306x444-1920w.jpg">
+        <img loading="lazy" decoding="async" src="https://lirp.cdn-website.com/ccde371b/dms3rep/multi/opt/13898612_1138498262859757_1706263397_o%20%281%29-1306x444-1920w.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+{% set images = galleries.bodyandsoul2.images %}
+{% include 'components/gallery/gallery-section.html' %}
+
+<!-- Lightbox container -->
+<div class="lightbox" id="lightbox">
+    <img src="" alt="Vergrote foto">
+</div>
+
+{% include 'components/cta.html' %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = lightbox.querySelector("img");
+    const images = document.querySelectorAll(".cs-image-group .cs-item img");
+
+    images.forEach(img => {
+        img.addEventListener("click", function() {
+            lightboxImg.src = img.src; // zet de klik-afbeelding in de lightbox
+            lightbox.style.display = "flex";
+        });
+    });
+
+    // Sluit lightbox als je erop klikt
+    lightbox.addEventListener("click", function() {
+        lightbox.style.display = "none";
+        lightboxImg.src = "";
+    });
+});
+</script>
+
+{% endblock %}

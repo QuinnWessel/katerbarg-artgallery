@@ -1,0 +1,70 @@
+---
+title: 'Over Mij '
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'overmij/'
+eleventyNavigation:
+    key: Over Mij
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/overmij.css">
+    <link rel="stylesheet" href="/assets/css/critical.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Over Mij</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+        <source media="(min-width: 601px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+        <img loading="lazy" decoding="async" src="../../assets/images/Banner-foto-katerbargartgallery.webp" alt="field" width="1920" height="1200" aria-hidden="true">
+    </picture>
+    
+</div>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RPsbs-248">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="../../assets/images/janskaterbarg.jpg">
+            <source media="(min-width: 601px)" srcset="../../assets/images/janskaterbarg.jpg">
+            <img loading="lazy" decoding="async" src="../../assets/images/janskaterbarg.jpg" alt="Jans" width="434" height="434" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper"></span>
+            <h2 class="cs-title">Jans Katerbarg</h2>
+            <p class="cs-text">
+                Op deze site ziet u schilderijen, houten sculpturen, 3D schilderijen en foto's van Cuba. Ik ontdekte mijn aanleg voor het schilderen nadat mijn zoontje mij vroeg iets op zijn schoolbordje te tekenen. Inmiddels heb ik tientallen exposities gehad in binnen- en buitenland. Hoogtepunten zijn mijn drie deelnames aan het Cucalambeana-festival in Cuba en het winnen van een cultuurprijs.
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="/contact">Contact</a>
+        </div>
+    </div>
+</section>
+
+
+                                
+                                
+                                
+
+
+                                
+                                
+   
+{% endblock %}

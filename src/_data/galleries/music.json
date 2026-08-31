@@ -1,0 +1,11 @@
+{
+    "images": [
+        {"image": "/assets/images/amy.webp", "name": "Amy Winehouse"},
+        {"image": "/assets/images/pf3d.webp", "name": "Pink Floyd 3D"},
+        {"image": "/assets/images/pinkfloyd.webp", "name": "Pink Floyd"},
+        {"image": "/assets/images/music ozzie.jpg", "name": "Ozzie"},
+        {"image": "/assets/images/music manmetgitaar.jpg", "name": "Man Met Gitaar"},
+        {"image": "/assets/images/music freddie.jpg", "name": "Freddie Mercury"},
+        {"image": "/assets/images/music davidbowie.jpg", "name": "David Bowie"}
+    ]
+}

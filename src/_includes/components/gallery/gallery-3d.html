@@ -1,0 +1,23 @@
+<!-- 3D Gallery Section - dynamisch vanuit JSON data, ondersteunt video's en afbeeldingen -->
+<section id="gallery-45">
+    <div class="cs-container">
+        <div class="cs-content">
+            {% if galleryTitle %}<h2 class="cs-title">{{ galleryTitle }}</h2>{% endif %}
+        </div>
+        <ul class="cs-image-group">
+            {% for item in items %}
+            <li class="cs-item">
+                {% if item.type == "video" %}
+                <video class="cs-video" width="100%" height="100%" muted loop playsinline controls>
+                    <source src="{{ item.src }}" type="video/mp4">
+                    Je browser ondersteunt deze video niet.
+                </video>
+                {% else %}
+                <img class="cs-image cs-contain" loading="lazy" decoding="async" src="{{ item.src }}" alt="{{ item.name }}">
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/contact" class="cs-button-solid">Contact</a>
+    </div>
+</section>

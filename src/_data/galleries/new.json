@@ -1,0 +1,10 @@
+{
+    "images": [
+        {"image": "/assets/images/ruwhout 2vrouwen.jpg", "name": "2 Vrouwen"},
+        {"image": "/assets/images/ruwhout gekleurdevrouw.jpg", "name": "Gekleurde Vrouw"},
+        {"image": "/assets/images/ruwhout davidbowie.jpg", "name": "David Bowie"},
+        {"image": "/assets/images/houtsculptuur brilvrouw.jpg", "name": "Bril Vrouw"},
+        {"image": "/assets/images/3ds.jpg", "name": "3D Schilderij"},
+        {"image": "/assets/images/colordancing.jpg", "name": "Color Dancing"}
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "images": [
+        {"image": "/assets/images/rodeautocuba.webp", "name": "Rode Auto Cuba"},
+        {"image": "/assets/images/blauweautocuba.webp", "name": "Blauwe Auto Cuba"},
+        {"image": "/assets/images/autocuba.webp", "name": "Auto Cuba"},
+        {"image": "/assets/images/cubaman.webp", "name": "Cuba Man"},
+        {"image": "/assets/images/cubaman2.webp", "name": "Cuba Man 2"},
+        {"image": "/assets/images/thumbnail_Cuba Lets dance.jpg", "name": "Cuba Lets Dance"},
+        {"image": "/assets/images/thumbnail_Cuba Music.jpg", "name": "Cuba Music"}
+    ]
+}

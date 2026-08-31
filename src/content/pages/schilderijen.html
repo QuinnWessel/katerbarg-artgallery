@@ -1,0 +1,103 @@
+---
+title: 'Schilderijen'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'schilderijen/'
+eleventyNavigation:
+    key: /schilderijen
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/schilderijen.css">
+    <link rel="stylesheet" href="/assets/css/critical.css">
+    {% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Schilderijen</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+        <img loading="lazy" decoding="async" src="../../assets/images/Banner-foto-katerbargartgallery.webp" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="RPsbs-1593">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <video class="cs-video cs-video1" width="413" height="500" autoplay muted loop playsinline>
+                <source src="../../assets/images/maxverstappen-3d.mp4" type="video/mp4">
+                Je browser ondersteunt deze video niet.
+            </video>
+            
+           
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">3D Schilderijen</span>
+            <h2 class="cs-title">Alles Over Mijn 3D Schilderijen</h2>
+            <p class="cs-text">
+                In 2024 ben ik begonnen met de 3d schilderijen.  
+            </p>
+            <a href="/3dschilderijen" class="cs-button-solid">Bekijk De Collectie</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RPsbsr-1593">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="../../assets\images/she is a mistery.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="../../assets\images/she is a mistery.webp">
+                <img loading="lazy" decoding="async" src="../../assets\images/she is a mistery.webp" alt="mechanic" width="413" height="500">
+            </picture>
+            <!--Top Right image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="../../assets/images/serene.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="../../assets/images/serene.jpg">
+                <img loading="lazy" decoding="async" src="../../assets/images/serene.jpg" alt="mechanic" width="413" height="280">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Schilderijen</span>
+            <h2 class="cs-title">Alles Over Mijn Schilderijen</h2>
+            <p class="cs-text">
+                De schilderijen variëren van body and soul, muziek en sport. 
+            </p>
+            <a href="/2dschilderijen" class="cs-button-solid">bekijk de collectie</a>
+        </div>
+    </div>
+</section>
+                                
+   
+    </div>
+
+    {% include 'components/cta.html' %}
+{% endblock %}

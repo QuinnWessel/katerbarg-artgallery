@@ -1,0 +1,153 @@
+---
+title: 'Publiciteit'
+description: 'Description for <meta> description and OG tags'
+preloadImg: '/assets/images/imagename.format'
+permalink: 'publiciteit/'
+eleventyNavigation:
+    key: publiciteit
+    order: 1000
+   
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+        <link rel="stylesheet" href="/assets/css/publiciteit.css">
+        <link rel="stylesheet" href="/assets/css/critical.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-712">
+        <div class="cs-container">
+            <span class="cs-int-title">Publiciteit</span>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+            <img loading="lazy" decoding="async" src="../../assets/images/Banner-foto-katerbargartgallery.webp" alt="pills" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-578">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="../../assets/images/!katerbargpublieksprijs.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="../../assets/images/!katerbargpublieksprijs.webp">
+            <img loading="lazy" decoding="async" src="../../assets/images/!katerbargpublieksprijs.webp" alt="room" width="494" height="700">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper"></span>
+            <h2 class="cs-title">Publieksprijs</h2>
+            <p class="cs-text">
+                In 2017 heb ik me een naast het maken van schilderijen toegelegd op het maken van houten sculpturen. Een half jaar later heb ik hier mee de publieksprijs bij het beeldendkunstproject "Identitijd" (met 100 deelnemende kunstenaars) in de wacht gesleept. 
+            </p>
+          
+            
+        </div>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-1446">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper"></span>
+                <h2 class="cs-title">Nieuwsartikelen</h2>
+            </div>
+        </div>
+        <!--Gallery-->
+        <div class="cs-gallery">
+            <!--Picture 1-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="../../assets/images/!janskaterbargunivestadion.webp">
+                <source media="(min-width: 601px)" srcset="../../assets/images/!janskaterbargunivestadion.webp">
+                <img loading="lazy" decoding="async" src="../../assets/images/!janskaterbargunivestadion.webp" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 2-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="../../assets/images/!janskaterbargoverzee.webp">
+                <source media="(min-width: 601px)" srcset="../../assets/images/!janskaterbargoverzee.webp">
+                <img loading="lazy" decoding="async" src="../../assets/images/!janskaterbargoverzee.webp" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 3-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="../../assets/images/!janskaterbarguitcuba.webp">
+                <source media="(min-width: 601px)" srcset="../../assets/images/!janskaterbarguitcuba.webp">
+                <img loading="lazy" decoding="async" src="../../assets/images/!janskaterbarguitcuba.webp" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 4-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="../../assets/images/!janskaterbargnaarexpostitie.webp">
+                <source media="(min-width: 601px)" srcset="../../assets/images/!janskaterbargnaarexpostitie.webp">
+                <img loading="lazy" decoding="async" src="../../assets/images/!janskaterbargnaarexpostitie.webp" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 5-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="../../assets/images/!janskaterbargcubacadeau.webp">
+                <source media="(min-width: 601px)" srcset="../../assets/images/!janskaterbargcubacadeau.webp">
+                <img loading="lazy" decoding="async" src="../../assets/images/!janskaterbargcubacadeau.webp" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 6-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="../../assets/images/!janskaterbargfarbenformen.webp">
+                <source media="(min-width: 601px)" srcset="../../assets/images/!janskaterbargfarbenformen.webp">
+                <img loading="lazy" decoding="async" src="../../assets/images/!janskaterbargfarbenformen.webp" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 7-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="../../assets/images/!janskaterbargmondaynight.webp">
+                <source media="(min-width: 601px)" srcset="../../assets/images/!janskaterbargmondaynight.webp">
+                <img loading="lazy" decoding="async" src="../../assets/images/!janskaterbargmondaynight.webp" alt="gallery" width="305" height="400">
+            </picture>
+            
+            <div class="lightbox" id="lightbox">
+                <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                <img id="lightbox-img" src="" alt="Vergrote afbeelding">
+            </div>
+            <script>
+                // Functie om afbeelding in de lightbox te tonen
+                function openLightbox(src) {
+                    document.getElementById("lightbox-img").src = src;
+                    document.getElementById("lightbox").style.display = "flex";
+                }
+
+                // Functie om de lightbox te sluiten
+                function closeLightbox() {
+                    document.getElementById("lightbox").style.display = "none";
+                }
+
+                // Voeg event listeners toe aan alle afbeeldingen
+                document.querySelectorAll(".cs-image img").forEach(img => {
+                    img.addEventListener("click", function(event) {
+                        event.stopPropagation(); // Voorkomt dat de klik op de afbeelding de lightbox sluit
+                        openLightbox(this.src);
+                    });
+                });
+
+                // Sluit de lightbox als je buiten de afbeelding klikt
+                document.getElementById("lightbox").addEventListener("click", closeLightbox);
+
+
+            </script>
+        </div>
+    </div>
+</section>
+
+{% include 'components/cta.html' %}
+{% endblock %}

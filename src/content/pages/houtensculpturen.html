@@ -1,0 +1,75 @@
+---
+title: 'Houten Sculpturen'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'houtensculpturen/'
+eleventyNavigation:
+    key: Houten Sculpturen
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/houtensculpturen.css">
+    <link rel="stylesheet" href="/assets/css/critical.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Houten Sculpturen</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+        <img loading="lazy" decoding="async" src="../../assets/images/Banner-foto-katerbargartgallery.webp" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1354">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper"></span>
+
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/famouspeople" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Famous</span> People</h3>
+                </a>
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="../../assets/images/amywhinehouse-hout.webp">
+                    <source media="(min-width: 601px)" srcset="../../assets/images/amywhinehouse-hout.webp">
+                    <img decoding="async" src="../../assets/images/amywhinehouse-hout.webp" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/bodyandsoul2" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Body</span> And Soul</h3>
+                </a>
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="../../assets/images/ruitderiere.webp">
+                    <source media="(min-width: 601px)" srcset="../../assets/images/ruitderiere.webp">
+                    <img decoding="async" src="../../assets/images/ruitderiere.webp" alt="construction" width="305" height="305" aria-hidden="true">
+                </picture>
+            </li>
+        
+
+        </ul>
+                                
+
+        
+{% endblock %}

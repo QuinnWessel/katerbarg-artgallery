@@ -1,0 +1,20 @@
+<!-- Gallery Section - dynamisch vanuit JSON data -->
+<section id="gallery-45">
+    <div class="cs-container">
+        <div class="cs-content">
+            {% if galleryTitle %}<h2 class="cs-title">{{ galleryTitle }}</h2>{% endif %}
+        </div>
+        <ul class="cs-image-group">
+            {% for item in images %}
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{{ item.image }}">
+                    <source media="(min-width: 601px)" srcset="{{ item.image }}">
+                    <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" width="346" height="346">
+                </picture>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/contact" class="cs-button-solid">Contact</a>
+    </div>
+</section>

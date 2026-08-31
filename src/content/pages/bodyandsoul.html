@@ -1,0 +1,105 @@
+---
+title: 'Body And Soul | 2D Schilderijen'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'bodyandsoul/'
+eleventyNavigation:
+    key: Body And Soul
+    order: 600
+    hideOnDesktop: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/2dschilderijen.css">
+    <link rel="stylesheet" href="/assets/css/critical.css">
+    <style>
+        /* Lightbox basis styling */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 0 20px rgba(255,255,255,0.5);
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox:after {
+            content: '×';
+            position: fixed;
+            top: 20px;
+            right: 40px;
+            font-size: 3rem;
+            color: white;
+            cursor: pointer;
+        }
+        /* Cursor voor afbeeldingen */
+        .cs-image-group img {
+            cursor: zoom-in;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Body And Soul</span>
+    </div>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+        <source media="(min-width: 601px)" srcset="../../assets/images/Banner-foto-katerbargartgallery.webp">
+        <img loading="lazy" decoding="async" src="../../assets/images/Banner-foto-katerbargartgallery.webp" alt="banner" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+{% set images = galleries.bodyandsoul.images %}
+{% include 'components/gallery/gallery-section.html' %}
+
+<!-- Lightbox element -->
+<div class="lightbox" id="lightbox">
+    <img src="" alt="vergrote afbeelding">
+</div>
+
+{% include 'components/cta.html' %}
+
+<!-- Script voor lightbox -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = lightbox.querySelector("img");
+    const galleryImages = document.querySelectorAll(".cs-image-group img");
+
+    galleryImages.forEach(img => {
+        img.addEventListener("click", () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.add("active");
+        });
+    });
+
+    lightbox.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+        lightboxImg.src = "";
+    });
+});
+</script>
+
+{% endblock %}

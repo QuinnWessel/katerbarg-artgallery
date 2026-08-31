@@ -3,13 +3,142 @@ backend:
     branch: main
 
 local_backend: true
-# change url to a link to the image you want to use, no file paths, must be a URL
 logo_url: https://codestitch.app/frontend/images/logo.png
 
-media_folder: "src/assets/images/blog"
-public_folder: "/assets/images/blog"
+media_folder: "src/assets/images/uploads"
+public_folder: "/assets/images/uploads"
 
 collections:
+    - name: "galleries"
+      label: "Galerijen"
+      files:
+          - name: "bodyandsoul"
+            label: "Body And Soul (2D)"
+            file: "src/_data/galleries/bodyandsoul.json"
+            fields:
+                - name: "images"
+                  label: "Foto's"
+                  widget: "list"
+                  fields:
+                      - { label: "Afbeelding", name: "image", widget: "image" }
+                      - { label: "Naam", name: "name", widget: "string" }
+          - name: "bodyandsoul2"
+            label: "Body And Soul (Hout)"
+            file: "src/_data/galleries/bodyandsoul2.json"
+            fields:
+                - name: "images"
+                  label: "Foto's"
+                  widget: "list"
+                  fields:
+                      - { label: "Afbeelding", name: "image", widget: "image" }
+                      - { label: "Naam", name: "name", widget: "string" }
+          - name: "colors"
+            label: "Colors"
+            file: "src/_data/galleries/colors.json"
+            fields:
+                - name: "images"
+                  label: "Foto's"
+                  widget: "list"
+                  fields:
+                      - { label: "Afbeelding", name: "image", widget: "image" }
+                      - { label: "Naam", name: "name", widget: "string" }
+          - name: "cuba"
+            label: "Cuba"
+            file: "src/_data/galleries/cuba.json"
+            fields:
+                - name: "images"
+                  label: "Foto's"
+                  widget: "list"
+                  fields:
+                      - { label: "Afbeelding", name: "image", widget: "image" }
+                      - { label: "Naam", name: "name", widget: "string" }
+          - name: "divers"
+            label: "Divers"
+            file: "src/_data/galleries/divers.json"
+            fields:
+                - name: "images"
+                  label: "Foto's"
+                  widget: "list"
+                  fields:
+                      - { label: "Afbeelding", name: "image", widget: "image" }
+                      - { label: "Naam", name: "name", widget: "string" }
+          - name: "famouspeople"
+            label: "Famous People"
+            file: "src/_data/galleries/famouspeople.json"
+            fields:
+                - name: "images"
+                  label: "Foto's"
+                  widget: "list"
+                  fields:
+                      - { label: "Afbeelding", name: "image", widget: "image" }
+                      - { label: "Naam", name: "name", widget: "string" }
+          - name: "music"
+            label: "Music"
+            file: "src/_data/galleries/music.json"
+            fields:
+                - name: "images"
+                  label: "Foto's"
+                  widget: "list"
+                  fields:
+                      - { label: "Afbeelding", name: "image", widget: "image" }
+                      - { label: "Naam", name: "name", widget: "string" }
+          - name: "new"
+            label: "New!"
+            file: "src/_data/galleries/new.json"
+            fields:
+                - name: "images"
+                  label: "Foto's"
+                  widget: "list"
+                  fields:
+                      - { label: "Afbeelding", name: "image", widget: "image" }
+                      - { label: "Naam", name: "name", widget: "string" }
+          - name: "opdrachten"
+            label: "Opdrachten"
+            file: "src/_data/galleries/opdrachten.json"
+            fields:
+                - name: "images"
+                  label: "Foto's"
+                  widget: "list"
+                  fields:
+                      - { label: "Afbeelding", name: "image", widget: "image" }
+                      - { label: "Naam", name: "name", widget: "string" }
+          - name: "ruwhout"
+            label: "Ruw Hout"
+            file: "src/_data/galleries/ruwhout.json"
+            fields:
+                - name: "images"
+                  label: "Foto's"
+                  widget: "list"
+                  fields:
+                      - { label: "Afbeelding", name: "image", widget: "image" }
+                      - { label: "Naam", name: "name", widget: "string" }
+          - name: "water"
+            label: "Water"
+            file: "src/_data/galleries/water.json"
+            fields:
+                - name: "images"
+                  label: "Foto's"
+                  widget: "list"
+                  fields:
+                      - { label: "Afbeelding", name: "image", widget: "image" }
+                      - { label: "Naam", name: "name", widget: "string" }
+          - name: "3dschilderijen"
+            label: "3D Schilderijen"
+            file: "src/_data/galleries/3dschilderijen.json"
+            fields:
+                - name: "items"
+                  label: "Items (Video's & Foto's)"
+                  widget: "list"
+                  fields:
+                      - label: "Type"
+                        name: "type"
+                        widget: "select"
+                        options:
+                            - { label: "Afbeelding", value: "image" }
+                            - { label: "Video", value: "video" }
+                      - { label: "Bestand (pad naar bestand)", name: "src", widget: "string", hint: "Bijv. /assets/images/video.mp4 of /assets/images/foto.jpg" }
+                      - { label: "Naam", name: "name", widget: "string" }
+
     - name: "blog"
       label: "Blog"
       folder: "src/content/blog"

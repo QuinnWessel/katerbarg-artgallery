@@ -1,0 +1,13 @@
+{
+    "items": [
+        {"type": "video", "src": "/assets/images/davidbowie-3d.mp4", "name": "David Bowie 3D"},
+        {"type": "video", "src": "/assets/images/maxverstappen-3d.mp4", "name": "Max Verstappen 3D"},
+        {"type": "video", "src": "/assets/images/elvis-3d.mp4", "name": "Elvis 3D"},
+        {"type": "video", "src": "/assets/images/Bruce-3d.mp4", "name": "Bruce Springsteen 3D"},
+        {"type": "video", "src": "/assets/images/blondiekatebush-3d.mp4", "name": "Blondie & Kate Bush 3D"},
+        {"type": "video", "src": "/assets/images/cobainvedder-3d.mp4", "name": "Cobain & Vedder 3D"},
+        {"type": "image", "src": "/assets/images/thumbnail_3D Pink Floyd.jpg", "name": "Pink Floyd 3D"},
+        {"type": "video", "src": "/assets/images/3D Rolling Stones.MOV", "name": "Rolling Stones 3D"},
+        {"type": "image", "src": "/assets/images/thumbnail_3D.  The Wall.jpg", "name": "The Wall 3D"}
+    ]
+}

@@ -1,0 +1,112 @@
+---
+title: 'Famous People | Houten Sculpturen'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'famouspeople/'
+eleventyNavigation:
+    key: 
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/houtensculpturen.css">
+    <link rel="stylesheet" href="/assets/css/critical.css">
+    <style>
+        /* Lightbox styling */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 0 20px rgba(255,255,255,0.5);
+            cursor: zoom-out;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox .close {
+            position: fixed;
+            top: 20px;
+            right: 40px;
+            font-size: 3rem;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+        }
+        .cs-image-group img {
+            cursor: zoom-in;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Famous People</span>
+    </div>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://lirp.cdn-website.com/ccde371b/dms3rep/multi/opt/13898612_1138498262859757_1706263397_o%20%281%29-1306x444-1920w.jpg">
+        <source media="(min-width: 601px)" srcset="https://lirp.cdn-website.com/ccde371b/dms3rep/multi/opt/13898612_1138498262859757_1706263397_o%20%281%29-1306x444-1920w.jpg">
+        <img loading="lazy" decoding="async" src="https://lirp.cdn-website.com/ccde371b/dms3rep/multi/opt/13898612_1138498262859757_1706263397_o%20%281%29-1306x444-1920w.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+{% set images = galleries.famouspeople.images %}
+{% include 'components/gallery/gallery-section.html' %}
+
+<!-- Lightbox element -->
+<div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img src="" alt="vergrote afbeelding">
+</div>
+
+{% include 'components/cta.html' %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = lightbox.querySelector("img");
+    const closeBtn = lightbox.querySelector(".close");
+    const galleryImages = document.querySelectorAll(".cs-image-group img");
+
+    galleryImages.forEach(img => {
+        img.addEventListener("click", () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.add("active");
+        });
+    });
+
+    closeBtn.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+        lightboxImg.src = "";
+    });
+
+    lightbox.addEventListener("click", e => {
+        if(e.target === lightbox) {
+            lightbox.classList.remove("active");
+            lightboxImg.src = "";
+        }
+    });
+});
+</script>
+
+{% endblock %}

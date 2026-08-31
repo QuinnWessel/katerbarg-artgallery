@@ -1,0 +1,8 @@
+{
+    "images": [
+        {"image": "/assets/images/friends.webp", "name": "Friends"},
+        {"image": "/assets/images/emmen-vlinderstad.webp", "name": "Emmen Vlinderstad"},
+        {"image": "/assets/images/mother-and-child.jpg", "name": "Mother And Child"},
+        {"image": "/assets/images/speed.webp", "name": "Speed"}
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "images": [
+        {"image": "/assets/images/stipcruyf.jpeg", "name": "Stip Cruyf"},
+        {"image": "/assets/images/dansblauw.webp", "name": "Dans Blauw"},
+        {"image": "/assets/images/monroehout.webp", "name": "Monroe Hout"},
+        {"image": "/assets/images/colorexplosion.jpeg", "name": "Color Explosion"}
+    ]
+}
