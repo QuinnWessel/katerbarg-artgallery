@@ -1,10 +1,6 @@
 {
   "images": [
     {
-      "image": "/assets/images/thumbnail_HS Love.jpg",
-      "name": "Love"
-    },
-    {
       "image": "/assets/images/uploads/whatsapp-image-2026-09-29-at-18.15.24.jpeg",
       "name": "jo"
     },
@@ -39,6 +35,10 @@
     {
       "image": "/assets/images/uploads/whatsapp-image-2026-09-29-at-18.13.05.jpeg",
       "name": "woman"
+    },
+    {
+      "image": "/assets/images/thumbnail_HS Love.jpg",
+      "name": "Love"
     }
   ]
 }
